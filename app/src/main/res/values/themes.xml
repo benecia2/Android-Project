@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BlisgoProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">#403d3d</item>#e4edec/#000000
+
+        <item name="android:textViewStyle">@style/customTextViewFontStyle</item>
+        <item name="android:buttonStyle">@style/customButtonFontStyle</item>
+        <item name="android:editTextStyle">@style/customEditTextFontStyle</item>
+
+
+<!--        <item name="android:windowBackground">@drawable/leaf_background</item>-->
+
+        <!-- Primary brand color. -->
+        <item name="colorOnPrimary">@color/white</item>
+
+
+<!-- <item name="android:statusBarColor" tools:targetApi = "l">?attr/colorOnPrimary</item>-->
+        <item name="android:statusBarColor" tools:targetApi = "l">#00000000</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="Theme.BlisgoProject" parent="Base.Theme.BlisgoProject" />
+</resources>

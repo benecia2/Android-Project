@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_array">
+        <item>분류 선택</item>
+        <item>팁/정보</item>
+        <item>의견/제안</item>
+        <item>뉴스</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>

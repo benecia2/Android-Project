@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product.ProductMain"
+    android:orientation="vertical"
+    android:background="#e4edec">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/backKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backkeymain"/>
+        <!-- Replace TextView with ImageView for the app bar image -->
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="폐기물 명"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+    <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/furniture"
+            android:background="#ffffff" />
+        <TextView
+            android:id="@+id/pclass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="폐기물 분류"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="15dp"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTxt1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:onClick="toggleTextExpansion"
+            android:text="     버리는 방법"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:drawableRight="@drawable/underkey"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+        <TextView
+            android:id="@+id/contentTxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="본문 내용"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:layout_marginBottom="15dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:text="     알면 더 도움되는 팁"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="toggleTextExpansion"
+            android:background="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableRight="@drawable/underkey"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+        <TextView
+            android:id="@+id/contentTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="본문 내용"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:layout_marginBottom="15dp"/>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
