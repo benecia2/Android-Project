@@ -1,6 +1,9 @@
 ## ♻️ 프로젝트 소개
 * 다양한 폐기물의 정보를 확인 할 수 있는 사이트
 
+## 🔲 서버
+* https://github.com/benecia2/RecycleApp-Server
+
 ## 📅 개발기간
   * 23.08.16 ~ 23.08.29
 
